@@ -1,0 +1,25 @@
+/* Add this line to include Leaflet CSS */
+@import 'leaflet/dist/leaflet.css';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-item {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.photo-item img {
+  max-width: 100%;
+  height: auto;
+}
