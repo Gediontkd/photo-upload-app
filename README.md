@@ -1,67 +1,54 @@
 # Photo Upload Application
 
-This project is a full-stack application for uploading, displaying, and managing photos with a backend built using FastAPI and a frontend built with React. This application consists of a backend service and a frontend service, both of which can be run using Docker. This guide will help you set up and run the application for testing purposes.
+## Project Overview
 
-## Prerequisites
+The Photo Upload Application is a web-based application that allows users to upload and manage photos. It consists of a backend API built with Python using FastAPI and a frontend UI built with React. Both components are containerized using Docker for easy deployment and testing.
+
+## Setup Instructions
+
+### Prerequisites
 
 Make sure you have the following installed on your system:
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
-## Getting Started
 
-### 1. Clone the Repository
+## API Documentation
 
-Clone the repository to your local machine:
+### Backend API
 
-```sh
-git clone https://github.com/Gediontkd/photo-upload-app.git
-cd photo-upload-app
-```
+The backend API is documented using Swagger UI and is accessible at `http://localhost:8000/docs` when the application is running. It provides endpoints for managing photos, including uploading and retrieving.
 
-### 2. Build the Docker Containers
+## Assumptions and Design Decisions
 
-Navigate to the root of the project directory and build the Docker containers using Docker Compose:
+- **Containerization:** The application is containerized using Docker to ensure consistency in development, testing, and deployment environments.
+  
+- **Technology Stack:** Python with FastAPI is chosen for the backend due to its asynchronous capabilities and ease of use for building robust APIs. React is chosen for the frontend for its declarative component-based architecture and efficient rendering.
 
-```sh
-docker-compose build
-```
+- **Persistence:** The backend uses SQLite for simplicity in this demonstration. For production, a more scalable database like PostgreSQL or MySQL would be recommended.
 
-### 2. Run the Docker Containers
+## Instructions on How to Run the Application Locally
 
-After building the containers, start them with:
+To run the application locally using Docker, follow these steps:
 
-```sh
-docker-compose up
-```
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Gediontkd/photo-upload-app.git
+   cd photo-upload-app
+   ```
 
-This command will start both the backend and frontend services. Please note that the frontend might take some time to build and start initially.
+2. Build and start the Docker containers:
+   ```sh
+   docker-compose build
+   docker-compose up
+   ```
 
-### 5. Access the Application
+3. Access the application:
+   - Frontend: Open `http://localhost:3000` in your web browser.
+   - Backend: API documentation is available at `http://localhost:8000/docs`.
 
-- **Frontend:** Open your web browser and navigate to `http://localhost:3000` to access the frontend application.
-- **Backend:** The backend service should be running on `http://localhost:8000`. You can interact with the backend API using tools like `curl` or Postman.
-
-### 6. Stopping the Application
-
-To stop the running Docker containers, press `CTRL+C` in the terminal where the containers are running, or run:
-
-```sh
-docker-compose down
-```
-
-## Testing the Application
-
-### Frontend
-
-To test the frontend:
-
-1. Open `http://localhost:3000` in your web browser.
-2. Interact with the UI and ensure that it behaves as expected.
-
-### Backend
-
-To test the backend:
-
-1. Access the API documentation at `http://localhost:8000/docs`.
+4. Stop the application:
+   ```sh
+   docker-compose down
+   ```
