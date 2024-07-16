@@ -18,7 +18,7 @@ Make sure you have the following installed on your system:
 Clone the repository to your local machine:
 
 ```sh
-git clone https://github.com/your-username/photo-upload-app.git
+git clone https://github.com/Gediontkd/photo-upload-app.git
 cd photo-upload-app
 ```
 

@@ -7,11 +7,11 @@ class PhotoBase(BaseModel):
     longitude: float
 
 class PhotoCreate(PhotoBase):
-    file_path: str  # Add file_path to PhotoCreate schema
+    file_path: str
 
 class Photo(PhotoBase):
     id: int
-    file_path: str  # Add file_path to Photo schema
+    file_path: str
 
     class Config:
         orm_mode = True
