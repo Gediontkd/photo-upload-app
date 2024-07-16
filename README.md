@@ -33,12 +33,7 @@ docker-compose up -d
 
 This command will start both the backend and frontend services. Please note that the frontend might take some time to build and start initially.
 
-### 3. Access the Application
-
-- **Frontend:** Open your web browser and navigate to `http://localhost:3000` to access the frontend application.
-- **Backend:** The backend service should be running on `http://localhost:8000`. You can interact with the backend API using tools like `curl` or Postman.
-
-### 4. Stopping the Application
+### 3. Stopping the Application
 
 To stop the running Docker containers, press `CTRL+C` in the terminal where the containers are running, or run:
 
