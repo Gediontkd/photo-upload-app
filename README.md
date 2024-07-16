@@ -55,7 +55,7 @@ The backend API is documented using Swagger UI and is accessible at `http://loca
 
 - **Persistence:** The backend uses SQLite for simplicity in this demonstration. For production, a more scalable database like PostgreSQL or MySQL would be recommended.
 
-## Automated Test
+## Test Cases
 
 ### Frontend
 
