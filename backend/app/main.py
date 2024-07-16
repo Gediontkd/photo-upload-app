@@ -82,7 +82,7 @@ async def upload_photo(
         description=description,
         latitude=latitude,
         longitude=longitude,
-        file_path=file.filename  # Set the file_path to the filename
+        file_path=file.filename
     )
     
     db_photo = crud.create_photo(db=db, photo=photo_metadata, file_path=file.filename)

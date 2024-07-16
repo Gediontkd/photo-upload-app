@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Grid, Card, CardMedia, CardContent, Typography } from '@mui/material';
 
 const PhotoGallery = ({ photos }) => {
-  console.log('Photos:', photos); // Check what photos are received
+//   console.log('Photos:', photos); // Check what photos are received
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    setLoading(false); // Assuming photos are loaded once component mounts
+    setLoading(false);
   }, []);
 
   if (loading) {
@@ -21,7 +21,7 @@ const PhotoGallery = ({ photos }) => {
   return (
     <Grid container spacing={4}>
       {photos.map((photo) => {
-        console.log('Photo:', photo);
+        // console.log('Photo:', photo);
         return (
           <Grid item key={photo.id} xs={12} sm={6} md={4}>
             <Card>

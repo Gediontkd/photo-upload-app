@@ -9,4 +9,4 @@ class Photo(Base):
     description = Column(String, index=True)
     latitude = Column(Float, index=True)
     longitude = Column(Float, index=True)
-    file_path = Column(String, index=True)  # Ensure file_path is included
+    file_path = Column(String, index=True)

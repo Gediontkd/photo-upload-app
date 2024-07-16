@@ -7,7 +7,7 @@ def create_photo(db: Session, photo: schemas.PhotoCreate, file_path: str):
         description=photo.description,
         latitude=photo.latitude,
         longitude=photo.longitude,
-        file_path=file_path  # Ensure file_path is set correctly
+        file_path=file_path
     )
     db.add(db_photo)
     db.commit()
