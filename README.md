@@ -45,7 +45,7 @@ To run the application locally using Docker, follow these steps:
    ```
 
 3. Access the application:
-   - Frontend: Open `http://localhost:3000` in your web browser.
+   - Frontend: Open `http://localhost:3000` in your web browser. (note: The frontend might take some time to build and start initially.)
    - Backend: API documentation is available at `http://localhost:8000/docs`.
 
 4. Stop the application:
