@@ -13,40 +13,6 @@ Make sure you have the following installed on your system:
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
-
-## API Documentation
-
-### Backend API
-
-The backend API is documented using Swagger UI and is accessible at `http://localhost:8000/docs` when the application is running. It provides endpoints for managing photos, including uploading and retrieving.
-
-## Assumptions and Design Decisions
-
-- **Containerization:** The application is containerized using Docker to ensure consistency in development, testing, and deployment environments.
-  
-- **Technology Stack:** Python with FastAPI is chosen for the backend due to its asynchronous capabilities and ease of use for building robust APIs. React is chosen for the frontend for its declarative component-based architecture and efficient rendering.
-
-- **Persistence:** The backend uses SQLite for simplicity in this demonstration. For production, a more scalable database like PostgreSQL or MySQL would be recommended.
-
-Sure! Here's the updated `README.md` file including the instructions for testing the backend and frontend:
-
----
-
-# Photo Upload Application
-
-## Project Overview
-
-The Photo Upload Application is a web-based application that allows users to upload and manage photos. It consists of a backend API built with Python using FastAPI and a frontend UI built with React. Both components are containerized using Docker for easy deployment and testing.
-
-## Setup Instructions
-
-### Prerequisites
-
-Make sure you have the following installed on your system:
-
-- [Docker](https://docs.docker.com/get-docker/)
-- [Docker Compose](https://docs.docker.com/compose/install/)
-
 ### 1. Clone the Repository
 
 Clone the repository to your local machine:
@@ -62,7 +28,7 @@ Navigate to the root of the project directory and build the Docker containers us
 
 ```sh
 docker-compose build
-docker-compose up
+docker-compose up -d
 ```
 
 This command will start both the backend and frontend services. Please note that the frontend might take some time to build and start initially.
@@ -77,7 +43,7 @@ This command will start both the backend and frontend services. Please note that
 To stop the running Docker containers, press `CTRL+C` in the terminal where the containers are running, or run:
 
 ```sh
-docker-compose down
+docker-compose down -v
 ```
 
 ## API Documentation
