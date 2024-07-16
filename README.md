@@ -1,6 +1,6 @@
 # Photo Upload Application
 
-This application consists of a backend service and a frontend service, both of which can be run using Docker. This guide will help you set up and run the application for testing purposes.
+This project is a full-stack application for uploading, displaying, and managing photos with a backend built using FastAPI and a frontend built with React. This application consists of a backend service and a frontend service, both of which can be run using Docker. This guide will help you set up and run the application for testing purposes.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ After building the containers, start them with:
 docker-compose up
 ```
 
-This command will start both the backend and frontend services. You should see logs indicating that both services have started successfully. the frontend might take some time
+This command will start both the backend and frontend services. Please note that the frontend might take some time to build and start initially.
 
 ### 5. Access the Application
 
